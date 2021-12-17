@@ -1,4 +1,5 @@
 import pyautogui as pg ,webbrowser as web ,time as tm
+pg.FAILSAFE = True
 name=input("Como se va llamar : ")#Le pregunta al usuario el nombre del video
 n=name.lower()#convierte el nombre a minisculas 
 ir = n.find('quimica')!=-1 or n.find('fisica')!=-1 or n.find('logica')!=-1 #valida si es de irwing  
@@ -45,7 +46,7 @@ if ir:
     pg.click(667,141)
     tm.sleep(2)
     pg.hotkey('ctrl','v')
-    pg.click(636,158)#Click al boton de mandar info
+    pg.press("enter")#Envia la Informacion
 pg.click(661,738)#abre el explorador de archivos
 tm.sleep(4)
 pg.click(72,261)#Videos 
