@@ -2,7 +2,7 @@ import pyautogui as pg ,webbrowser as web ,time as tm
 pg.FAILSAFE = True
 name=input("Como se va llamar : ")#Le pregunta al usuario el nombre del video
 n=name.lower()#convierte el nombre a minisculas 
-ir = n.find('quimica')!=-1 or n.find('fisica')!=-1 or n.find('logica')!=-1 #valida si es de irwing  
+ir = n.find('biologia')!=-1 or n.find('fisica')!=-1 or n.find('proyectos')!=-1 or n.find('ambiente')!=-1 #valida si es de irwing  
 web.open('https://studio.youtube.com/channel/UCxXE5uqxeC-9wBdTteT1VnA/videos?d=ud')#Abre el navegador en youtube estudio
 currentMouseX, currentMouseY = pg.position()#mira la posicion del moouse 
 tm.sleep(15)
@@ -49,7 +49,7 @@ if ir:
     pg.press("enter")#Envia la Informacion
 pg.click(661,738)#abre el explorador de archivos
 tm.sleep(4)
-pg.click(72,261)#Videos 
+pg.click(71,222)#Videos 
 pg.click(456,169)#Click al primer video
 pg.hotkey ('ctrl', 'x')#Corta el video
 pg.click(347,161)
